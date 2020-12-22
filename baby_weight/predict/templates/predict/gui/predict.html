@@ -1,0 +1,39 @@
+{% extends "predict/base.html" %}
+{% load static %}
+
+{% block title %}
+  Predict Baby Weight
+{% endblock %}
+
+{% block content %}
+<div class="gestation-detail">
+
+    <table>
+        <tr>
+            <td>
+                <form method="post" >
+                    <table>
+                        {{form.as_table}}
+                        {% csrf_token %}
+                    </table>
+                    <br/>
+                    <input type="submit" name="" value="Submit">
+                </form>
+            </td>
+
+            <td>
+                <img class="one" src="{% static "predict/img/baby-7.jpg" %}"   > </img>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <table>
+        <tr>{{weight_kilos}}  Kg</tr><br>
+        <tr>{{weight_pounds}} lp</tr>
+    </table>
+
+
+</div>
+{% endblock %}
