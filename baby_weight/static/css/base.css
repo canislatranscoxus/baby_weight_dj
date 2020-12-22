@@ -16,6 +16,10 @@ img.mylogo {
 img.one {
   width : 50%
 }
+img.two {
+  width : 50%
+}
+
 
 a {
     text-decoration:none;
@@ -335,3 +339,4 @@ form div.field {
     color:#666;
     border-radius:4px;
 }
+
